@@ -1,18 +1,13 @@
-langchain
-langchain-community
-langchain-openai
-langchain-chroma
-langchain-text-splitters
-openai
-pypdf
-pymupdf
-fastapi
-uvicorn
-streamlit
-python-dotenv
-rank_bm25
-ragas
-pydantic
-unstructured
-langchain-google-genai
-pypdf
+ langchain-huggingface
+ sentence-transformers
+ faiss-cpu
+ langchain-google-genai
+ langchain-community
+ langchain-classic
+ langchain
+ streamlit
+ python-dotenv
+ pypdf
+ pydantic
+ unstructured
+ rank_bm25
