@@ -1,7 +1,17 @@
 import streamlit as st
 import base64
 import os
+import sys
 from dotenv import load_dotenv
+
+# --- FIX FOR CLOUD DEPLOYMENT ---
+# This adds the main project folder to the "search path" so 'src' can be found.
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, ".."))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+# --------------------------------
+
 from src.ingestion.parser import DocumentParser
 from src.retrieval.engine import RetrievalEngine
 from src.generation.chain import RAGChain
